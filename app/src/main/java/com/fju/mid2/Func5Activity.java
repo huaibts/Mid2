@@ -11,7 +11,5 @@ public class Func5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_func5);
     }
-    public void login5(View view){
 
-    }
 }

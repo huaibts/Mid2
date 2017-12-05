@@ -11,7 +11,5 @@ public class Func6Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_func6);
     }
-    public void login6(View view){
 
-    }
 }

@@ -11,7 +11,5 @@ public class Func7Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_func7);
     }
-    public void login7(View view){
 
-    }
 }

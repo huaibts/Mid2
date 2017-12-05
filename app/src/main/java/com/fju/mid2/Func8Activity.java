@@ -11,7 +11,5 @@ public class Func8Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_func8);
     }
-    public void login8(View view){
 
-    }
 }

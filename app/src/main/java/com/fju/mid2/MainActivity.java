@@ -13,53 +13,41 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Intent intent1 = new Intent(this, Func1Activity.class);
-        Intent intent2 = new Intent(this, Func2Activity.class);
-        Intent intent3 = new Intent(this, Func3Activity.class);
-        Intent intent4 = new Intent(this, Func4Activity.class);
-        Intent intent5 = new Intent(this, Func5Activity.class);
-        Intent intent6 = new Intent(this, Func6Activity.class);
-        Intent intent7 = new Intent(this, Func7Activity.class);
-        Intent intent8 = new Intent(this, Func8Activity.class);
-
-
-        Button b1 = (Button) findViewById(R.id.button);
-        Button b2 = (Button) findViewById(R.id.button2);
-        Button b3 = (Button) findViewById(R.id.button3);
-        Button b4 = (Button) findViewById(R.id.button4);
-        Button b5 = (Button) findViewById(R.id.button5);
-        Button b6 = (Button) findViewById(R.id.button6);
-        Button b7 = (Button) findViewById(R.id.button7);
-        Button b8 = (Button) findViewById(R.id.button8);
-
-        String button = b1.getText().toString();
-
-        startActivity(intent1);
-       // startActivity(intent1);
     }
 
     public void login1(View view){
+        Intent intent1 = new Intent(this, Func1Activity.class);
+        startActivity(intent1);
     }
     public void login2(View view){
-
+        Intent intent2 = new Intent(this, Func2Activity.class);
+        startActivity(intent2);
     }
     public void login3(View view){
+        Intent intent3 = new Intent(this, Func3Activity.class);
+        startActivity(intent3);
         Toast.makeText(this, "特殊功能", Toast.LENGTH_SHORT).show();
     }
     public void login4(View view){
-
+        Intent intent4 = new Intent(this, Func4Activity.class);
+        startActivity(intent4);
     }
     public void login5(View view){
-
+        Intent intent5 = new Intent(this, Func5Activity.class);
+        startActivity(intent5);
     }
     public void login6(View view){
-
+        Intent intent6 = new Intent(this, Func6Activity.class);
+        startActivity(intent6);
     }
     public void login7(View view){
+        Intent intent7 = new Intent(this, Func7Activity.class);
+        startActivity(intent7);
         Toast.makeText(this, "特殊功能", Toast.LENGTH_SHORT).show();
     }
     public void login8(View view){
+        Intent intent8 = new Intent(this, Func8Activity.class);
+        startActivity(intent8);
         Toast.makeText(this, "特殊功能", Toast.LENGTH_SHORT).show();
     }
 }

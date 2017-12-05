@@ -11,7 +11,5 @@ public class Func3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_func3);
     }
-    public void login3(View view){
 
-    }
 }
