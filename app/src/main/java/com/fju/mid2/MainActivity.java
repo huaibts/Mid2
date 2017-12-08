@@ -8,6 +8,15 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    private final static int FUNCTION_MAIN = 102;
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == FUNCTION_MAIN){
+            Toast.makeText(this, "特殊功能", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void login3(View view){
         Intent intent3 = new Intent(this, Func3Activity.class);
-        startActivity(intent3);
-        Toast.makeText(this, "特殊功能", Toast.LENGTH_SHORT).show();
+        startActivityForResult(intent3, FUNCTION_MAIN);
     }
     public void login4(View view){
         Intent intent4 = new Intent(this, Func4Activity.class);
@@ -42,12 +50,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void login7(View view){
         Intent intent7 = new Intent(this, Func7Activity.class);
-        startActivity(intent7);
-        Toast.makeText(this, "特殊功能", Toast.LENGTH_SHORT).show();
+        startActivityForResult(intent7, FUNCTION_MAIN);
     }
     public void login8(View view){
         Intent intent8 = new Intent(this, Func8Activity.class);
-        startActivity(intent8);
-        Toast.makeText(this, "特殊功能", Toast.LENGTH_SHORT).show();
+        startActivityForResult(intent8, FUNCTION_MAIN);
     }
 }
