@@ -19,9 +19,9 @@ public class Func1Activity extends AppCompatActivity {
         Random r = new Random();
         int num = r.nextInt(6)+1;
         new AlertDialog.Builder(this)
-                .setTitle("dice")
                 .setMessage(""+num)
                 .setPositiveButton("OK", null)
                 .show();
     }
+
 }
