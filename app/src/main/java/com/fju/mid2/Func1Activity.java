@@ -14,7 +14,6 @@ public class Func1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_func1);
     }
-
     
     public void number(View view){
         Random r = new Random();
