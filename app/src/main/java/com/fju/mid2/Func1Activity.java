@@ -15,11 +15,12 @@ public class Func1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_func1);
     }
 
-    
+
     public void number(View view){
         Random r = new Random();
         int num = r.nextInt(6)+1;
         new AlertDialog.Builder(this)
+                .setTitle("dice")
                 .setMessage(""+num)
                 .setPositiveButton("OK", null)
                 .show();
