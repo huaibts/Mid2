@@ -56,4 +56,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent8 = new Intent(this, Func8Activity.class);
         startActivityForResult(intent8, FUNCTION_MAIN);
     }
+    
 }
